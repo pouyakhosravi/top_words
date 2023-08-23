@@ -33,5 +33,5 @@ in the lance-rack, an old buckler, a lean hack, and a greyhound for
 coursing. An olla of rather more beef than mutton, a salad on most
 nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra
 on Sundays, made away with three-quarters of his income.`;
-const topWords = findTopWords("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e");
+const topWords = findTopWords(text);
 console.log(topWords);
