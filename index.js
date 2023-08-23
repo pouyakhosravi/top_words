@@ -1,6 +1,7 @@
 function findTopWords(text) {
   // Remove line-breaks and ... then convert them to lowerCase.
   const cleanText = text.replace(/[^\w\s']/g, '').toLowerCase();
+  console.log(cleanText);
 
   // Split text into words
   const words = cleanText.split(/\s+/);
@@ -21,7 +22,7 @@ function findTopWords(text) {
   const sortedWords = [...wordFrequency.entries()].sort((a, b) => b[1] - a[1]);
 
   // find top3 words
-  const topWords = sortedWords.slice(0, 3).map(entry => entry[0]);
+  const topWords = sortedWords.slice(0, 3).map(entry => entry[0]).filter(word => word);
 
   return topWords;
 }
